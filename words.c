@@ -257,7 +257,7 @@ int print_result(FILE *fout){
     Node *list;
     int i;
 
-    fout=fopen("phrases.txt","w");              //avataan tiedosto tallennusta varten
+    fout=fopen("words_print.txt","w");              //avataan tiedosto tallennusta varten
 
     if(fout==NULL)
     {
@@ -265,17 +265,17 @@ int print_result(FILE *fout){
         return 1;
     }
 
-    printf(" \n\n     *** PHRASES *** \n\n");
-    printf(" Total number of phrases: %d\n\n", num);
-    printf(" Number of different phrases: %d\n\n", uniqphrases);
-    printf(" The 100 most common phrases: \n\n");
-    printf(" PHRASE        NUMBER OF OCCURRENCIES\n");
+    printf(" \n\n     *** WORDS *** \n\n");
+    printf(" Total number of words: %d\n\n", num);
+    printf(" Number of different words: %d\n\n", uniqphrases);
+    printf(" The 100 most common words: \n\n");
+    printf(" WORDS        NUMBER OF OCCURRENCIES\n");
 
     fprintf(fout, "\n\n     *** PHRASES *** \n\n");
-    fprintf(fout, "Total number of phrases: %d\n", num);
-    fprintf(fout, "Number of different phrases: %d\n\n", uniqphrases );
-    fprintf(fout, "The 100 most common phrases: \n");
-    fprintf(fout, "PHRASE         NUMBER OF OCCURRENCIES\n");
+    fprintf(fout, "Total number of words: %d\n", num);
+    fprintf(fout, "Number of different words: %d\n\n", uniqphrases );
+    fprintf(fout, "The 100 most common words: \n");
+    fprintf(fout, "WORDS         NUMBER OF OCCURRENCIES\n");
 
     for(i =0; i<100; i++){
        list = maximum();
@@ -292,7 +292,7 @@ void print_biggest(){
     char answer;
 
     do{
-        printf("\n\nSearch phrase which have biggest number of occurencies? Y/N \n");    //Kysytään haluaako käyttäjä nähdä isoimpaan fraasiin liittyvät fraasit
+        printf("\n\nSearch word which have biggest number of occurencies? Y/N \n");    //Kysytään haluaako käyttäjä nähdä isoimpaan fraasiin liittyvät fraasit
         answer = getch();
 
         if(answer == 'Y' || answer == 'y') {
