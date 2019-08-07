@@ -2,7 +2,7 @@
 
 Program to count occurencies of words in a text file.
 
-### Demo
+## Demo
 
 #### First user add name of a file.
 ![](images/w1.jpg)
