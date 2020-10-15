@@ -1,6 +1,7 @@
 # Words
 
-Program to count occurencies of words in a text file.
+## Motivation
+Learn programming with C. Also learning how to use a file and sort words.
 
 ## Demo
 
@@ -19,3 +20,11 @@ After that program prints words in descending order.
 
 #### If user choose Y program print all occurencies.
 ![](images/w4.jpg)
+
+## Tech/framework used
+- C
+
+## Features
+- Program counts occurencies of words in the a text file.
+
+
