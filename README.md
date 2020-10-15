@@ -11,6 +11,7 @@ Learn programming with C. Also learning how to use a file and sort words.
 
 #### Program prints total number of words and also number of different words. 
 After that program prints words in descending order.
+
 ![](images/w2.jpg)
 
 
